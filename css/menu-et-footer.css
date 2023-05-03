@@ -1,0 +1,93 @@
+header{
+	position:fixed;
+	width:100vw;
+	background:  rgba(255, 255, 255, 0.321);
+	z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+	position:fixed;
+	display:flex;
+	flex-direction: row;
+	top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+	column-gap:100px;
+	padding-left: 0;
+	margin-bottom: 0;
+	z-index: 1;
+}
+
+li {
+	display:flex;
+	justify-content: center;
+}
+
+a{
+	color:white;
+	text-shadow:1px 1px 3px #a6adb1;
+}
+
+a.active{
+	color:#558ea9;
+}
+
+.nav {
+  --c: #558ea9; /* the color */
+  --s: .15em;
+
+	text-decoration: none;
+  line-height:1.1em;
+  padding-bottom: calc(2.1*var(--s));
+  background: 
+    conic-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+      left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+    conic-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+      left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+  transition: .5s;
+}
+.nav:hover {
+  --_p: 100%;
+  color: var(--c);
+	text-decoration: none;
+}
+
+/* Petit écran */
+@media screen and (max-width: 1520px){
+	header ul{
+		margin-top:15px;
+	}
+	header{
+		height:55px;
+	}
+	li {
+		font-size:18px;
+		width:150px;
+	}
+}
+
+/* Grand écran */
+@media screen and (min-width: 1520px){
+	header ul{
+		margin-top:30px;
+	}
+	header{
+		height:90px;
+	}
+	li {
+		font-size:22px;
+		width:200px;
+	}
+}
+
+footer p{
+	position:fixed;
+	bottom:0;
+	font-size:15px;
+	color:#47758b;
+	margin-left:20px;
+}

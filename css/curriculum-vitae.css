@@ -1,0 +1,38 @@
+img{
+	position: absolute;
+	top:11%;
+	left:35%;
+	color:#61889a;
+	width:31%;
+	height:auto;
+	background: rgba(255, 255, 255, 0.192);
+	text-align:center;
+	z-index: 1;
+}
+
+/* Petit écran */
+@media screen and (max-width: 1520px){
+
+}
+
+/* Grand écran */
+@media screen and (min-width: 1520px){
+
+}
+
+.telecharger{
+	position:fixed;
+	z-index: 1;
+	top:30%;
+	right:24%;
+	background: white;
+	border-radius: 5px;
+	padding:3px 10px 3px 10px;
+	color:#61889a;
+	border:2px #61889a solid;
+	text-shadow:none;
+}
+
+.telecharger:hover{
+	color:#61889a;
+}
