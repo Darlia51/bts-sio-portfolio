@@ -1,11 +1,20 @@
-body, html {
-	overflow: hidden;
-}
-
 #video-fond-ecran{
 	position:static;
 	top:0;
 	left:0;
 	height: 100%;
 	width:100%;
+}
+
+#video-petite{
+	position: fixed;
+	z-index: 3;
+	border-bottom: 2px white solid;
+}
+
+/* Petit écran */
+@media screen and (max-width: 1520px){
+	#video-petite{
+		width:100%
+	}
 }

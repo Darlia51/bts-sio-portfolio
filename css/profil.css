@@ -1,3 +1,7 @@
+body, html {
+	overflow: hidden;
+}
+
 h1{
 	position:fixed;
 	top: 15%;
@@ -11,7 +15,7 @@ h1{
 p.profil{
 	position:fixed;
 	color:#61889a;
-	background: rgba(255, 255, 255, 0.192);
+	background: rgba(255, 255, 255, 0.511);
 	text-align:center;
 }
 

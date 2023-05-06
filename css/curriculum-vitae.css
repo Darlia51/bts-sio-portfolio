@@ -1,3 +1,7 @@
+body, html {
+	overflow: hidden;
+}
+
 img{
 	position: absolute;
 	top:11%;
@@ -35,4 +39,8 @@ img{
 
 .telecharger:hover{
 	color:#61889a;
+	background:#7bb7d3;
+	color:white;
+	transition:0.5s;
+	text-decoration: none;
 }
